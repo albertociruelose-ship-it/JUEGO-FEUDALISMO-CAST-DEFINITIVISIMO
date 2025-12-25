@@ -133,7 +133,7 @@
                 year: 1150,
                 title: "El Nacimiento del Mercado",
                 context: "Hay paz y sobra comida. En un cruce de caminos, artesanos y comerciantes han montado un mercado permanente. ¡Están ganando dinero!",
-                dilemma: "Esa nueva ciudad (Burgo) está en tierras de un Conde. El Conde quiere cobrarles impuestos abusivos. Los burgueses te piden ayuda a ti, el Rey.",
+                dilemma: "Esa nueva ciudad (Burgo) está en tierras de un Conde. El Conde quiere cobrarles impuestos abusivos. Los burgueses te piden ayuda a ti, el Rey. Quien sabe si podrán ofrecerte algo a cambio...",
                 options: [
                     {
                         text: "Prohibir el mercado (es pecado)",
@@ -159,8 +159,8 @@
                 stage: 2,
                 year: 1212,
                 title: "Necesitas Dinero Urgente",
-                context: "Quieres recuperar territorios perdidos, pero la guerra es cara. Has llamado a los Nobles y a la Iglesia, pero dicen que ellos pagan con 'sangre y oraciones', no con dinero.",
-                dilemma: "¿A quién puedes acudir para conseguir financiación rápida?",
+                context: "Quieres recuperar territorios perdidos, pero la guerra es cara. Has convocado una reunion para cobrar impuestos y tomar decisiones importantes. Esa reunión es llamada las cortes. En ella participan los Nobles y a la Iglesia, pero cuando pides impuestos te dicen que ellos pagan con 'sangre y oraciones', no con dinero.",
+                dilemma: "¿Qué deves hacer para conseguir ese dinero?",
                 options: [
                     {
                         text: "Robar las tierras a la Iglesia",
@@ -175,7 +175,7 @@
                         effect: { king: 0, nobles: 10, gold: 0 }
                     },
                     {
-                        text: "Llamar a las Ciudades a las Cortes",
+                        text: "Invitar a las Ciudades a la reunion y darles voto en ella a cambio de que te paguen",
                         type: "continue",
                         feedback: "Invitas a los representantes de las ciudades (Tercer Estado). Te dan el oro que necesitas a cambio de tener voto en las Cortes.",
                         effect: { king: 15, nobles: -5, gold: 35 }
@@ -204,7 +204,7 @@
                         effect: { king: -20, nobles: 20, gold: 0 }
                     },
                     {
-                        text: "Proteger a los campesinos",
+                        text: "Proteger a los campesinos con tu justicia real",
                         type: "continue",
                         feedback: "Te niegas. Los nobles se arruinan por falta de trabajadores. Tú te presentas como el Rey Justiciero y ganas autoridad.",
                         effect: { king: 25, nobles: -20, gold: -10 }
@@ -215,7 +215,7 @@
                 stage: 3,
                 year: 1492,
                 title: "El Duelo Final",
-                context: "El Duque de la Frontera, el noble más poderoso, se ha rebelado. Dice que no te reconoce como autoridad. Se ha encerrado en su castillo.",
+                context: "El Duque de la Frontera, el noble más poderoso, se ha rebelado. Dice que no te reconoce como su rey. Se ha encerrado en su castillo.",
                 dilemma: "Es el momento de la verdad. Tienes las arcas llenas de oro de las ciudades. ¿Cómo acabas con esta rebelión?",
                 options: [
                     {
@@ -233,7 +233,7 @@
                     {
                         text: "Crear el Ejército Real (Artillería)",
                         type: "continue",
-                        feedback: "Usas tu ORO. Contratas artilleros y un ejército permanente. Tus cañones destrozan sus murallas. Nadie puede oponerse a ti.",
+                        feedback: "Usas tu ORO. Contratas un ejército permanente con armas modernas. Tus cañones destrozan sus murallas. Nadie puede oponerse a ti.",
                         effect: { king: 50, nobles: -50, gold: -50 }
                     }
                 ]
@@ -510,3 +510,4 @@
     </script>
 </body>
 </html>
+
